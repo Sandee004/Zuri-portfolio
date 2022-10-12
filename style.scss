@@ -11,6 +11,7 @@ body {
     //overflow-x: hidden;
     
 }
+/*Mobile View*/
 @media (min-width: 100px) {
     .section1, .section2, .section3, .section4, .section5{
         display: none;
@@ -48,11 +49,8 @@ body {
                         display: block;
                         font-size: 7vw;
                         color: white;
-                        //line-height: 80px;
-                        //vertical-align: middle;
                         font-weight: 600;
-                        //margin: 0px 25px;
-                        //padding-top: 20px;
+                        font-family: 'Dancing Script', cursive;
                         .menu-svg{
                             float: right;
                             vertical-align: middle;
@@ -60,8 +58,6 @@ body {
                             height: 5vw;
                             color: red;
                             padding-top: 10px;
-                            //margin: 18px 25px;
-                            //padding-top: 10px;
                         }
                     }
                 }
@@ -160,7 +156,7 @@ body {
             @include sections();
             background: whitesmoke;
             color: black;
-            height: 300vw;
+            height: 350vw;
             :nth-child(1){
                 span{
                     color: red;
@@ -181,8 +177,8 @@ body {
             //:nth-child(4) {
                 margin: 2vw auto 3vw auto;
                 display: block;
-                width: 70vw;
-                height: 56vw;
+                width: 60vw;
+                height: 80vw;
                 
             }
             &::before{
@@ -333,6 +329,30 @@ body {
             h5{
                 font-size: 3.6vw;
                 font-weight: 450;
+                margin-bottom: 15px;
+            }
+            input, textarea{
+                display: block;
+                margin: 0 auto 10px auto;
+                width: 50vw;
+                font-family: inherit;
+                font-size: 16px;
+                border-radius: 3px;
+                resize: none;
+                border: 1px solid black;
+                padding: 4px;
+                &:focus{
+                    outline: none;
+                    border: 1.5px solid grey;
+                }
+            }
+            .submit{
+                background: red;
+                color: white;
+                font-size: 16px;
+                border-radius: 3px;
+                padding: 3px 7px;
+                border: none;
             }
             .icon{
                 margin: 20px 0 20px 0;
@@ -1001,8 +1021,8 @@ body {
                 margin-top: 100px;
                 color: black;
                 img{
-                    width: 410px;
-                    height: 380px;
+                    width: 350px;
+                    height: 410px;
                 }
             }
         }
@@ -1121,11 +1141,53 @@ body {
     .section5 {
         display: block;
         background: #EDEDED;
-        height: 300px;
+        height: 450px;
         text-align: center;
 
         h2 {
-            padding: 70px 0 5px 0;
+            padding: 55px 0 5px 0;
+        }
+
+        .topic{
+            display: block;
+            margin: 15px auto;
+            font-size: 16px;
+            width: 270px;
+            height: 28px;
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 0 15px;
+        }
+
+        textarea{
+            display: inline;
+            margin: auto 0 auto 7vw;
+            width: 270px;
+            height: 100px;
+            border-radius: 4px;
+            padding: 6px 15px;
+            font-size: 16px;
+            font-family: inherit;
+            border: 1px solid black;
+            resize: none;
+        }
+
+        .submit{
+            background: black;
+            color: white;
+            font-size: 15px;
+            font-family: inherit;
+            transition: background 1s;
+            border: 0.2px solid black;
+            border-radius: 4px;
+            padding: 4px 10px;
+            //display: block;
+            margin: auto 15px;
+            &:hover{
+                cursor: pointer;
+                background: red;
+            }
         }
 
         .icons {
@@ -1137,13 +1199,13 @@ body {
             }
         }
 
-        p {
+        /*p {
             a {
                 font-style: italic;
                 text-decoration: none;
                 color: black;
             }
-        }
+        }*/
 
     }
 }
